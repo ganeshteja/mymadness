@@ -1,0 +1,41 @@
+ <html>
+ <head>
+ <title> GT the Great Thinker </title>
+ <script type= "text/javascript">
+ 
+ function chanf(g,f,o){
+ var an;
+ switch(o){
+ case '+':
+ an=parseInt(g)+parseInt(f);alert(an);
+ break;
+ case '-':
+ an=parseInt(g)-parseInt(f);alert(an);
+ break;
+ case '*':
+ an=parseInt(g)*parseInt(f);alert(an);
+ break;
+ case '/':
+ an=parseInt(g)/parseInt(f);alert(an);
+ break;
+ default:
+ alert(an);
+ }
+ }
+ </script>
+ </head>
+ <body>
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="number" id="a" name="a"><br>
+  <select id="op" name="cars">
+  <option value=+>+</option>
+  <option value=->-</option>
+  <option value=*>*</option>
+  <option value=/>/</option>
+</select>
+  <input type="number" id="b" name="b"><br>
+   <input type = "button" onclick = "chanf(a.value,b.value,op.value)" value = "teest">
+  </form>
+  </body>
+</html>
