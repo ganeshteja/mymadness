@@ -1,6 +1,6 @@
- <html>
+<html>
  <head>
- <title> GT the Great Thinker </title>
+ <title> GTulator </title>
  <script type= "text/javascript">
  
  function chanf(g,f,o){
@@ -25,10 +25,10 @@
  </script>
  </head>
  <body>
- <form>
-  <label for="fname">First name:</label><br>
+ <form action="/tre" method="get">
+  <label for="fname"></label><br>
   <input type="number" id="a" name="a"><br>
-  <select id="op" name="cars">
+  <select id="op" name="op">
   <option value=+>+</option>
   <option value=->-</option>
   <option value=*>*</option>
@@ -36,6 +36,7 @@
 </select>
   <input type="number" id="b" name="b"><br>
    <input type = "button" onclick = "chanf(a.value,b.value,op.value)" value = "teest">
+   <input type="submit" value="Submit">
   </form>
   </body>
 </html>
